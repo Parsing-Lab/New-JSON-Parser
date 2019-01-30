@@ -416,19 +416,7 @@ namespace wiz {
 						nestedUT[braceNum]->AddItem(move(var), move(val));
 						var = ""; val = "";
 
-						const std::string top = std::string(strVec[i].str, strVec[i].len);
-
-						if (strVec.empty())
-						{
-							//
-						}
-						else if (top.size() == 1 && -1 != Equal(option.Right, top[0])) {
-							//Utility::Pop(strVec, nullptr, nestedUT[braceNum], option);
-							state = 0;
-						}
-						else {
-							state = 0;
-						}
+						state = 0;
 					}
 				}
 			}
